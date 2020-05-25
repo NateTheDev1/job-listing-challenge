@@ -11,6 +11,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-size: 15px;
 }
 
 header {
@@ -42,7 +43,7 @@ header img {
   border-radius: 5px;
   border-left: 5px solid hsl(180, 29%, 50%);
   width: 100%;
-  height: 150px;
+  height: 120px;
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
@@ -54,28 +55,47 @@ header img {
 
 .middle {
   line-height: 0;
+  width: 65%;
 }
 
 .middle-row {
   line-height: 0;
+  align-items: center;
+  height: 20%;
 }
 
 .top-row {
   line-height: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 20%;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+}
+
+.top-row button {
+  font-size: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 1px;
 }
 
 .bottom-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.user .left {
-  width: 30%;
+  height: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.user .left {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  margin-right: 5%;
 }
 
 .tags {
@@ -83,5 +103,35 @@ header img {
   display: flex;
   justify-content: space-between;
 }
+
+.badge-blue {
+  color: white;
+  text-transform: uppercase;
+  background-color: hsl(180, 29%, 50%);
+}
+
+.badge-black {
+  color: white;
+  text-transform: uppercase;
+  background-color: black;
+}
+
 .company {
+  color: hsl(180, 29%, 50%);
+  font-family: "Spartan", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.title {
+  font-family: "Spartan", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.bottom-row p {
+  font-family: "Spartan", sans-serif;
+  font-size: 0.7rem;
+  color: gray;
+  word-spacing: 3px;
 }
